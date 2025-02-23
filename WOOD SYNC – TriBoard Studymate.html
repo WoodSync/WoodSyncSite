@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TriBoard Studymate</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+    <header>
+    <div class="logo">
+        <img src="logo.png" alt="TriBoard Studymate">
+        <h1>WOOD SYNC</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Our Products</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
+    </nav>
+</header>
+    
+<section class="hero">
+    <div class="carousel">
+        <div class="carousel-item active">
+            <img src="slide1.jpg" alt="Woodwork">
+            <div class="carousel-text">A Wide Variety of Wood Items</div>
+        </div>
+        <div class="carousel-item">
+            <img src="slide2.jpg" alt="Quality Materials">
+            <div class="carousel-text">Quality Materials & Craftsmanship</div>
+        </div>
+        <div class="carousel-item">
+            <img src="slide3.jpg" alt="Quality Materials">
+            <div class="carousel-text">Made With Care</div>
+        </div>
+    </div>
+</section>
+<section id="products" class="products">
+    <h2>Our Product</h2>
+    <div class="product-grid">
+        <div class="product-item">
+            <img src="product1.jpg" alt="Study Board">
+            <h3>TriBoard Studymate</h3>
+            <p>Perfect for students and professionals.</p>
+            <p class="price">₱289.00</p>
+            <button class="buy-button" onclick="buyNow()">Buy Now</button>
+        </div>
+
+        <div class="product-placeholder">
+            <h3>More products coming soon!</h3>
+            <p>Stay tuned for new and exciting additions to our collection.</p>
+        </div>
+    </div>
+</section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <div class="gallery-wrapper">
+        <div class="gallery-grid">
+            <img src="gallery1.jpg" class="gallery-item active">
+            <img src="gallery2.jpg" class="gallery-item">
+            <img src="gallery3.jpg" class="gallery-item">
+            <img src="gallery4.jpg" class="gallery-item">
+        </div>
+    </div>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+        <button onclick="showGallery()">View More</button>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We provide high-quality handcrafted wooden products designed for durability and aesthetics.</p>
+        <p>Contact us at <strong>woodsync.sales@google.com</strong> or call <strong>(+63) 951-066-7818</strong></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 WOOD SYNC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
